@@ -1,0 +1,29 @@
+{
+  "name": "get-random-in-range",
+  "version": "1.0.0",
+  "description": "Get a random number in range as a lazy curried function.",
+  "main": "readme.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipdanic/get-random-in-range.git"
+  },
+  "keywords": [
+    "helper",
+    "utility",
+    "one-liners",
+    "random",
+    "functional"
+  ],
+  "author": "danicfilip.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/filipdanic/get-random-in-range/issues"
+  },
+  "homepage": "https://github.com/filipdanic/get-random-in-range",
+  "devDependencies": {
+    "tape": "^4.8.0"
+  }
+}
