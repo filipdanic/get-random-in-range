@@ -24,7 +24,14 @@
  * @param {number=} min
  * @return {function(number=): function(): number}
  */
-const randomInRange = (min = 0) => (max = 100) => () =>
-  Math.floor(Math.random() * (max - min)) + min;
+var randomInRange = function randomInRange() {
+  var min = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+  return function () {
+    var max = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 100;
+    return function () {
+      return Math.floor(Math.random() * (max - min)) + min;
+    };
+  };
+};
 
 module.exports = randomInRange;
